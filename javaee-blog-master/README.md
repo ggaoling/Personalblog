@@ -32,7 +32,6 @@ java web博客项目，尽最大可能实现mvc模式，没有使用到框架，
 * blog/daoImple 数据库接口实现类
 * blog/db 非主要业务的数据库操作
 * blog/filter 过滤器
-* blog/junit 测试包
 * blog/model bean包
 * blog/service 面向web的服务层
 * blog/servlet 主要的控制器servlet
@@ -46,44 +45,6 @@ java web博客项目，尽最大可能实现mvc模式，没有使用到框架，
 * page 主要网页
 * upload 图片上传文件夹
 
-### jar intro - 使用到的jar包
 
-* mysql-connector-java   jdbc to mysql
-
-* c3p0-0.9.5.2.jar     c3p0数据库连接池
-* mchange-commons-java.jar 
-
-* commons-beanutils-1.9.3-bin.zip  BeanUtils
-* commons-logging-1.2-bin.zip
-
-* jstl.jar  jstl标签库
-* standard.jar 
-
-* commons-fileupload.jar 文件上传
-* commons-io-2.5.jar
-* commons-lang-2.5.jar
-
-* commons-collections-3.1 集合工具包
-
-* json-lib-2.1-jdk15 json包
-* ezmorph-1.0.3
-
-### preview - 预览
-
-![lose the img](https://github.com/Lemonreds/MyBlog/blob/master/CAPTRUE/1.png)
-
-![lose the img](https://github.com/Lemonreds/MyBlog/blob/master/CAPTRUE/2.png)
-
-![lose the img](https://github.com/Lemonreds/MyBlog/blob/master/CAPTRUE/3.png)
-
-![lose the img](https://github.com/Lemonreds/MyBlog/blob/master/CAPTRUE/4.png)
-
-![lose the img](https://github.com/Lemonreds/MyBlog/blob/master/CAPTRUE/5.png)
-
-![lose the img](https://github.com/Lemonreds/MyBlog/blob/master/CAPTRUE/6.png)
-
-![lose the img](https://github.com/Lemonreds/MyBlog/blob/master/CAPTRUE/7.png)
-
-![lose the img](https://github.com/Lemonreds/MyBlog/blob/master/CAPTRUE/8.png)
 
 
