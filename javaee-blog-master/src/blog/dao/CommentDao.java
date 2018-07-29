@@ -31,11 +31,8 @@ public interface CommentDao {
 	List getComment(int article_id);
 
 	/**
-	 * 点赞或者鄙视
-	 * 
-	 * @param id
-	 * @param star_or_diss
-	 * @return
+	 * 点赞或者不喜欢
+	 *
 	 */
 	int star_diss(int id, int star_or_diss);
 

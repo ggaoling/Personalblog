@@ -41,9 +41,6 @@ public class ArticleDaoImpl implements ArticleDao {
 
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#addVisit(int)
-	 */
 	@Override
 	public void addVisit(int article_id) {
 
@@ -56,9 +53,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#getANearArticle(java.lang.String, int)
-	 */
 	@Override
 	public Article getANearArticle(String time, int less_or_more) {
 
@@ -84,9 +78,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		return article;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#getColumAndCount(java.lang.String)
-	 */
 	@Override
 	public Map getColumAndCount(String search_column) {
 
@@ -108,9 +99,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		return map;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#getAllSort()
-	 */
 	@Override
 	public List getAllSort() {
 
@@ -131,9 +119,7 @@ public class ArticleDaoImpl implements ArticleDao {
 		return list;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#addArticle(blog.model.Article)
-	 */
+
 	@Override
 	public Article addArticle(Article a) {
 
@@ -161,9 +147,6 @@ public class ArticleDaoImpl implements ArticleDao {
 
 	/**
 	 * 将文章加到delte表
-	 * 
-	 * @param a
-	 * @return
 	 */
 	private boolean addArticle_delet(Article a) {
 
@@ -191,8 +174,6 @@ public class ArticleDaoImpl implements ArticleDao {
 
 	/**
 	 * 获取最新的文章
-	 * 
-	 * @return
 	 */
 	private Article getLastArticle() {
 
@@ -215,9 +196,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		return null;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#deleteArticle(java.lang.String)
-	 */
 	@Override
 	public boolean deleteArticle(String id) {
 
@@ -237,9 +215,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		return result != 0;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#getAllArticle()
-	 */
 	@Override
 	public List getAllArticle() {
 		List<Article> list = new ArrayList();
@@ -267,9 +242,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		return list;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#getVisitRank()
-	 */
 	@Override
 	public List getVisitRank() {
 		List<Article> list = new ArrayList();
@@ -294,9 +266,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		return list;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#getArticleByColumn(java.lang.String, java.lang.String)
-	 */
 	@Override
 	public List<Article> getArticleByColumn(String column, String value) {
 		List<Article> list = null;
@@ -323,9 +292,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		return list;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#getCount(java.lang.String)
-	 */
 	@Override
 	public int getCount(String search_key) {
 
@@ -351,9 +317,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		return result;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#star_article(int)
-	 */
 	@Override
 	public int star_article(int id) {
 
@@ -379,9 +342,7 @@ public class ArticleDaoImpl implements ArticleDao {
 		return result;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#updateSort(java.lang.String, java.lang.String)
-	 */
+
 	@Override
 	public boolean updateSort(String old_sort, String new_sort) {
 
@@ -399,9 +360,6 @@ public class ArticleDaoImpl implements ArticleDao {
 		return result > 0;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.ArticleDao#delelteSort(java.lang.String)
-	 */
 	@Override
 	public boolean delelteSort(String sort) {
 		// 找到这个分类下的文章 移动到t_article_delet
@@ -441,6 +399,3 @@ public class ArticleDaoImpl implements ArticleDao {
 
 }
 
-// 2017年9月19日21:57:38 大吉大利 今晚吃鸡
-// bug无敌多 fuck
-// 2017年9月26日15:10:47 这个类有毒

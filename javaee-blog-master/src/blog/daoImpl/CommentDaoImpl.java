@@ -35,9 +35,7 @@ public class CommentDaoImpl implements CommentDao {
 
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.CommentDao#deleteComment(int)
-	 */
+
 	@Override
 	public boolean deleteComment(int comment_id) {
 
@@ -58,9 +56,6 @@ public class CommentDaoImpl implements CommentDao {
 
 	/**
 	 * 文章的评论-1
-	 * 
-	 * @param conn
-	 * @param comment_id
 	 */
 	private void article_sub_comemnt(Connection conn, int comment_id) {
 
@@ -80,9 +75,6 @@ public class CommentDaoImpl implements CommentDao {
 
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.CommentDao#addComment(blog.model.Comment)
-	 */
 	@Override
 	public boolean addComment(Comment comment) {
 
@@ -112,9 +104,6 @@ public class CommentDaoImpl implements CommentDao {
 		return result > 0;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.CommentDao#getComment(int)
-	 */
 	@Override
 	public List getComment(int article_id) {
 
@@ -145,9 +134,6 @@ public class CommentDaoImpl implements CommentDao {
 		return list;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.CommentDao#star_diss(int, int)
-	 */
 	@Override
 	public int star_diss(int id, int star_or_diss) {
 

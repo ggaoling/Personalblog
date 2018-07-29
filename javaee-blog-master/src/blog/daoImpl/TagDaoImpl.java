@@ -37,9 +37,6 @@ public class TagDaoImpl implements TagDao {
 		return instance;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.TagDao#addTag(int, java.lang.String)
-	 */
 	@Override
 	public boolean addTag(int id, String tag) {
 
@@ -58,9 +55,7 @@ public class TagDaoImpl implements TagDao {
 		return result != 0;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.TagDao#deleteTag(int, java.lang.String)
-	 */
+
 	@Override
 	public boolean deleteTag(int id, String tag) {
 
@@ -79,9 +74,7 @@ public class TagDaoImpl implements TagDao {
 		return result != 0;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.TagDao#getAllTag()
-	 */
+
 	@Override
 	public List getAllTag() {
 
@@ -106,9 +99,6 @@ public class TagDaoImpl implements TagDao {
 		return list;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.TagDao#updateTag(java.lang.String, java.lang.String)
-	 */
 	@Override
 	public boolean updateTag(String old_tag, String new_tag) {
 
@@ -127,9 +117,6 @@ public class TagDaoImpl implements TagDao {
 		return result != 0;
 	}
 
-	/* (non-Javadoc)
-	 * @see blog.daoImpl.TagDao#getTagByColumn(java.lang.String, java.lang.String)
-	 */
 	@Override
 	public List getTagByColumn(String column, String value) {
 
